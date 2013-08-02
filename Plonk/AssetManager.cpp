@@ -16,7 +16,7 @@ AssetManager::~AssetManager(void)
 Asset* AssetManager::Load(char* assetName, AssetType type){
 
 	for(int i = 0; i < Assets.size(); i++){
-		if(Assets[i]->Name == assetName){
+		if(Assets[i]->Name == assetName && Assets[i]->Type == type){
 			return Assets[i];
 		}
 	}

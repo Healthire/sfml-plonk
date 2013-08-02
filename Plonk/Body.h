@@ -2,6 +2,7 @@
 #include <SFML\System.hpp>
 #include <vector>
 #include "Shape.h"
+#include "Collision.h"
 
 
 class GameObject;
@@ -16,7 +17,7 @@ enum TBodyType{
 class Body
 {
 public:
-	Body(World* world);
+	Body(World* world, GameObject* object);
 	~Body(void);
 
 	TBodyType Type;
@@ -31,7 +32,13 @@ public:
 	sf::Vector2f Acceleration;
 	sf::Vector2f newPosition;
 	
+	float Rotation;
+	float AngularVelocity;
+	float maxAngularVelocity;
+
 	sf::Vector2f LinearDamping;
+
+	float Restitution;
 
 	Shape* shape;
 
@@ -44,6 +51,9 @@ public:
 
 	void ResolveCollision(Body* other);
 	void RectangleCollision(Body* other);
+
+
+	GameObject* gameObject;
 
 private:
 	World* world;

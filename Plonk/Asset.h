@@ -4,13 +4,19 @@
 
 
 
+enum AssetType{
+	Texture,
+	Font
+};
+
 class Asset
 {
 public:
 
 	char* Name;
+	AssetType Type;
 
-	Asset(char* name);
+	Asset(char* name, AssetType type);
 };
 
 

@@ -85,10 +85,11 @@ void Game::GameLoop(){
 		Update(dTime);
 		Draw(Window);
 
-		
-		sf::Time executeTime = Clock.getElapsedTime();
-		sf::Time sleepTime = sf::microseconds(1000000 / frameRate - executeTime.asMicroseconds());
-		sf::sleep(sleepTime);
+		if(frameRate != 0){
+			sf::Time executeTime = Clock.getElapsedTime();
+			sf::Time sleepTime = sf::microseconds(1000000 / frameRate - executeTime.asMicroseconds());
+			sf::sleep(sleepTime);
+		}
 		
 		
 

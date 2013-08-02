@@ -17,6 +17,8 @@ public:
 
 	void Draw(sf::RenderTarget* target);
 
+	bool Collide(Collision coll);
+
 protected:
 	Body* body;
 	sf::Sprite sprite;

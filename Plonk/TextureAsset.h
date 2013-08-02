@@ -7,6 +7,6 @@
 class TextureAsset : public Asset, public sf::Texture
 {
 public:
-	TextureAsset(char* name) : Asset(name){};
+	TextureAsset(char* name) : Asset(name, AssetType::Texture){};
 };
 

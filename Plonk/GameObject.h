@@ -26,6 +26,8 @@ public:
 	virtual void Update(float dTime) = 0;
 	virtual void Draw(sf::RenderTarget* target) = 0;
 
+	virtual bool Collide(Collision coll) = 0;
+
 	void Remove();
 
 	bool isDying();

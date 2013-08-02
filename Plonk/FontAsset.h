@@ -6,6 +6,6 @@
 class FontAsset : public Asset, public sf::Font
 {
 public:
-	FontAsset(char* name) : Asset(name){};
+	FontAsset(char* name) : Asset(name, AssetType::Font){};
 };
 

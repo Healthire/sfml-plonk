@@ -6,7 +6,8 @@ Game1::Game1(){
 	Game::Game();
 
 
-
+	
+	frameRate = 2000;
 	stateManager = new StateManager(&assetManager, this);
 }
 
@@ -24,6 +25,7 @@ void Game1::Init(){
 	PlayState* testState = new PlayState;
 	//MainMenu* mainMenu = new MainMenu;
 	stateManager->AddState(testState);
+
 	
 }
 

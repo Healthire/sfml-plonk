@@ -81,7 +81,9 @@ copy "$(SolutionDir)/Plonk/content" "$(OutputPath)content"
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Asset.h" />
     <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Ball.h" />
     <ClInclude Include="Body.h" />
+    <ClInclude Include="Collision.h" />
     <ClInclude Include="FontAsset.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Game1.h" />
@@ -109,7 +111,9 @@ copy "$(SolutionDir)/Plonk/content" "$(OutputPath)content"
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Asset.cpp" />
     <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Body.cpp" />
+    <ClCompile Include="Collision.cpp" />
     <ClCompile Include="FontAsset.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Game1.cpp" />

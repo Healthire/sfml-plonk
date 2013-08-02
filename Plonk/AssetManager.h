@@ -5,10 +5,6 @@
 #include "Asset.h"
 
 
-enum AssetType{
-	Texture,
-	Font
-};
 
 class AssetManager
 {
